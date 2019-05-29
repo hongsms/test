@@ -1,0 +1,50 @@
+﻿@charset "utf-8";
+
+/*msgbox*/
+.msgbox_layer, .msgbox_layer .gtl_ico_succ, .msgbox_layer .gtl_ico_fail, .msgbox_layer .gtl_ico_hits, .msgbox_layer .gtl_ico_clear, .msgbox_layer .gtl_end {background-image: url(../images/gb_tip_layer.png);[*+><]background-image: url(../images/gb_tip_layer_ie6.png);background-repeat: no-repeat;color: #606060;display: inline-block;font-size: 14px;font-weight: bold;height: 54px;line-height: 54px;}
+.msgbox_layer_wrap {left: 0;position: fixed;_position: absolute;_top: expression(documentElement.clientHeight/2 + documentElement.scrollTop + "px");text-align: center;top: 46%;width: 100%;z-index: 65533;}
+.msgbox_layer {background-position: 0 -161px;background-repeat: repeat-x;margin: 0 auto;padding: 0 18px 0 9px;position: relative;}
+.msgbox_layer .gtl_ico_succ {background-position: -6px 0;left: -45px;position: absolute;top: 0;width: 45px;}
+.msgbox_layer .gtl_end {background-position: 0 0;position: absolute;right: -6px;top: 0;width: 6px;}
+.msgbox_layer .gtl_ico_fail {background-position: -6px -108px;left: -45px;position: absolute;top: 0;width: 45px;}
+.msgbox_layer .gtl_ico_hits {background-position: -6px -54px;left: -45px;position: absolute;top: 0;width: 45px;}
+.msgbox_layer .gtl_ico_clear {background-position: -6px 0;left: -5px;position: absolute;top: 0;width: 5px;}
+.msgbox_layer img {float: left;margin: 19px 10px 0 5px;}
+
+/*confirmbox*/
+.confirm_layer_wrap {left: 0;position: fixed;_position: absolute;_top: expression(documentElement.clientHeight/2 + documentElement.scrollTop + "px");text-align: center;top: 40%;width: 100%;z-index: 65533;}
+.confirm_layer_wrap .confirm_con{width:320px;padding:55px 40px 50px 50px;text-align:center; background:#fff;border:solid 1px #a27c69;margin: 0 auto;position: relative;top:0;left:0;}
+.confirm_layer_wrap .confirm_text { position:relative; top:22%;text-align:left;color:#555;padding-left: 22px; font-size:14px;padding-bottom: 23px;}
+.confirm_layer_wrap .confirm_bar {height:55px;line-height:55px;position: relative;text-align: center;top:46%; overflow:hidden;}
+a.msgbox_confirm_btn{background: #93593d;border: 0 none;color: #fff; border-radius:5px;cursor: pointer;display: inline-block;font-size: 14px;width:92px;height: 40px;line-height: 40px;text-align: center;text-decoration: none;}
+a.msgbox_confirm_btn:hover, a.msgbox_confirm_btn:active, a.msgbox_confirm_btn:focus{background:#71381c;text-decoration: none;color:#fff;}
+
+/*loadingbox*/
+.loading_layer,  .loading_layer .gtl_ico_clear, .loading_layer .gtl_end {background-image: url(../images/gb_tip_layer.png);[*+><]background-image: url(../images/gb_tip_layer_ie6.png);background-repeat: no-repeat;color: #606060;display: inline-block;font-size: 14px;font-weight: bold;height: 54px;line-height: 54px;}
+.loading_layer_wrap {left: 0;position: fixed;_position: absolute;_top: expression(documentElement.clientHeight/2 + documentElement.scrollTop + "px");text-align: center;top: 46%;width: 100%;z-index: 65533;}
+.loading_layer {background-position: 0 -161px;background-repeat: repeat-x;margin: 0 auto;padding: 0 18px 0 9px;position: relative;}
+.loading_layer .gtl_end {background-position: 0 0;position: absolute;right: -6px;top: 0;width: 6px;}
+.loading_layer .gtl_ico_clear {background-position: -6px 0;left: -5px;position: absolute;top: 0;width: 5px;}
+.loading_layer img {float: left;margin: 19px 10px 0 5px;}
+
+/*msgbox2*/
+.msgbox2_layer_wrap {display:none;left: 0;position: fixed;_position: absolute;_top: expression(documentElement.clientHeight/2 + documentElement.scrollTop + "px");text-align: center;top: 32%;width: 100%;z-index: 65533;font-family: "微软雅黑";}
+.msgbox2_layer_wrap .msgbox2_outer {width:515px;border:solid 3px #EEE;margin: 0 auto;position: relative;top:0;left:0;overflow:hidden;}
+.msgbox2_box{ background:#FFFFFF;border-bottom: 1px solid #EEEEEE;color: #000;font-size: 14px;line-height: 23px;padding: 10px;text-align: left;font-weight:700;}
+.msgbox2_title {font-size:14px;}
+.msgbox2_close{color: #000000; float: right; font-size: 20px; font-weight: bold; line-height: 20px; opacity: 0.2; text-shadow: 0 1px 0 #FFFFFF; cursor:pointer;}
+.msgbox2_close:hover { text-decoration:none;opacity:0.5;color:#000;}
+
+.msgbox2_layer_wrap .msgbox2_con{padding:20px 16px 50px 16px;text-align:center;margin: 0 auto;position: relative;top:0;left:0;background:#FFF;}
+.msgbox2_layer_wrap .msgbox2_text { position:relative;text-align:left;color:#000; font-size:14px;}
+.msgbox2_layer_wrap .info_box{height:65px;background: url(../images/icon_hint_large2.gif) no-repeat 0 1px;margin: 10px auto 0 78px;padding-left:75px;text-align: left;}
+.msgbox2_layer_wrap .info { color: #000000;font-size:16px;height: 70px;line-height:55px;font-family: "微软雅黑";font-size:25px;}
+.msgbox2_layer_wrap .success {background-position:-0 1px;font-family: "微软雅黑";}
+.msgbox2_layer_wrap .error {background-position:0 -80px;font-family: "微软雅黑";}
+.msgbox2_layer_wrap .none {background:none;padding:0;margin:0;height:inherit;line-height:inherit;font-size:inherit;}
+.msgbox2_layer_wrap .ot_info{margin: 0 auto 10px 80px;padding-left: 75px;text-align:left;font-size:12px;}
+.msgbox2_layer_wrap .ot_info p {line-height:10px;}
+.msgbox2_layer_wrap .ot_info a {margin:0 5px; color:#f06;}
+
+
+#shadeDiv{position:absolute;left:0;top:0;background:#000;z-index:9999;}

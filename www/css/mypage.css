@@ -1,0 +1,4 @@
+﻿.in-page{color:#888;line-height:35px}
+.in-page span{padding:0 15px;border:1px solid #e8e8e8}
+.in-page a{padding:0 15px;border:1px solid #e8e8e8;display: inline-block;}
+.in-page a.cur,.in-page a:hover{border-color:#c2001d;background:#c2001d;color:#fff}

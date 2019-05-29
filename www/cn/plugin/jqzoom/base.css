@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+/*图片放大镜样式*/
+.jqzoom{float:left;border:none;position:relative;padding:0px;cursor:pointer;margin:0px;display:block;}
+.zoomdiv{z-index:100;position:absolute;top:0px;left:0px;width:350px;height:350px;background:#ffffff;border:1px solid #CCCCCC;display:none;text-align:center;overflow:hidden;}
+.jqZoomPup{z-index:10;visibility:hidden;position:absolute;top:0px;left:0px;width:20px;height:20px;border:1px solid #aaa;background:#ffffff /*url(../images/zoom.png) 50% center no-repeat*/;opacity: 0.5;-moz-opacity: 0.5;-khtml-opacity: 0.5;filter: alpha(Opacity=50);}
+.jqzoom img{ width: 498px; height: 498px;}
+/*图片小图预览列表*/
+.spec-preview{width:498px;height:498px;border:1px solid #DFDFDF; margin: 0 auto;}
+.spec-scroll{clear:both;margin:10px 0 30px;width:500px;}
+.spec-scroll .prev{float:left; background: url(../../img/btn_left.gif) 0 0 no-repeat;}
+.spec-scroll .next{float:right;background: url(../../img/btn_right.gif) 0 0 no-repeat;}
+.spec-scroll .prev,.spec-scroll .next{display:block;width:10px;height:45px;cursor:pointer; margin-top: 12px;}
+.spec-scroll .items{float:left;position:relative;width:480px;height:80px;overflow:hidden;}
+.spec-scroll .items ul{position:absolute;width:999999px;height:80px;}
+.spec-scroll .items ul li{float:left;width:80px;text-align:center;}
+.spec-scroll .items ul li img{border:1px solid #CCC;padding:2px;width:68px;height:68px;}
+.spec-scroll .items ul li img:hover{border:2px solid #FF6600;padding:1px;}

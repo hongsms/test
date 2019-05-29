@@ -1,0 +1,1142 @@
+html {
+    overflow: auto;
+}
+
+body {
+    color: #4c4c4c;
+    font-size: 9pt;
+    font-family: Arial,Microsoft YaHei,simsun,Helvetica Neue,Helvetica,sans-serif;
+    line-height: 1.5;
+}
+
+.main-body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.sub-body {
+    margin: 10px 15px;
+    min-width: 285px;
+}
+
+a, a:hover, a:visited {
+    color: #3f93ed;
+    text-decoration: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.plr5 {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.plr10 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.clear:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.dropdown-menu {
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+    .dropdown-menu > li > a {
+        color: #4c4c4c;
+    }
+
+        .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+            color: #40a1f0;
+        }
+
+        .dropdown-menu > li > a > span {
+            color: #657599;
+        }
+
+        .dropdown-menu > li > a:focus > span, .dropdown-menu > li > a:hover > span {
+            color: #40a1f0;
+        }
+
+.btn {
+    font-size: 9pt;
+}
+
+.btn-group .btn-primary {
+    border-color: #d6e3ec;
+    background-color: #fff;
+    color: #4c4c4c;
+}
+
+.btn-group.btn-radio input[type=radio] {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    pointer-events: none;
+}
+
+.btn-group.btn-check input[type=checkbox] {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    pointer-events: none;
+}
+
+.btn-group.btn-radio label {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.btn-group.btn-check label {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.btn-group .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.btn-group .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+    border-radius: 0;
+}
+
+.btn-group .btn:last-child:not(:first-child), .btn-group .dropdown-toggle:not(:first-child) {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.btn-group .btn-primary:hover, .btn-group .btn-primary:hover:active {
+    border-color: #d6e3ec;
+    background-color: #eee;
+    color: #4c4c4c;
+}
+
+.btn-group .btn-primary.active {
+    border-color: #1488e8;
+    background-color: #40a0ef;
+    box-shadow: none;
+    color: #fff;
+}
+
+.dropdown-toggle {
+    border-color: #d6e3ec;
+    background-color: #fff;
+    color: #4c4c4c;
+}
+
+    .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default.focus:active, .btn-default:active:focus, .btn-default:active:hover, .dropdown-toggle:hover, .open > .dropdown-toggle.btn-default.focus, .open > .dropdown-toggle.btn-default:focus, .open > .dropdown-toggle.btn-default:hover {
+        border-color: #d6e3ec;
+        background-color: #eee;
+        color: #4c4c4c;
+    }
+
+.form-control {
+    height: 2pc;
+    border: 1px solid #d6e3ec;
+    box-shadow: none;
+    color: #4c4c4c;
+    font-size: 9pt;
+}
+
+.content-edit .form-group {
+    margin-bottom: 0;
+}
+
+.btn-primary {
+    border-color: #1488e8;
+    background-color: #40a0ef;
+    color: #fff;
+}
+
+    .btn-primary:hover {
+        border-color: #1488e8;
+        background-color: #1388e8;
+        color: #fff;
+    }
+
+.top-container {
+    position: fixed;
+    height: 50px;
+    border-bottom: 1px solid #1488e8;
+    background-color: #40a0ef;
+}
+
+    .top-container .navbar-header a {
+        width: 200px;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .top-container .navbar-collapse .top-menu {
+        background: transparent url(../images/nav-bg.png) no-repeat scroll left center;
+    }
+
+        .top-container .navbar-collapse .top-menu li {
+            margin-left: -1px;
+        }
+
+            .top-container .navbar-collapse .top-menu li a {
+                padding-right: 25px;
+                padding-left: 25px;
+                background: transparent url(../images/nav-bg.png) no-repeat scroll right center;
+                color: #fff;
+                font-size: 15px;
+            }
+
+    .top-container .navbar-collapse .top-state .dropdown .dropdown-toggle {
+        color: #fff;
+        font-size: 15px;
+    }
+
+.top-state .dropdown .dropdown-toggle {
+    background-color: #40a0ef;
+}
+
+.nav .open > a:focus, .nav .open > a:hover, .top-container .nav .open > a, .top-container .navbar-collapse .top-menu .active a, .top-container .navbar-collapse .top-menu .active a:hover, .top-container .navbar-collapse .top-menu li a:hover, .top-container .navbar-collapse .top-state .dropdown .dropdown-toggle:focus, .top-container .navbar-collapse .top-state .dropdown .dropdown-toggle:hover {
+    background-color: #1388e8;
+    color: #fff;
+}
+
+.top-container .navbar-collapse .top-state .dropdown .dropdown-toggle span {
+    margin: 0 10px;
+}
+
+.top-container .navbar-collapse .top-state .dropdown-menu {
+    min-width: 135px;
+}
+
+.bottom-container {
+    position: fixed;
+    height: 30px;
+    min-height: 30px;
+    border-top: 1px solid #d6e3ec;
+    background-color: #fff;
+    color: #999;
+    line-height: 30px;
+}
+
+    .bottom-container .container {
+        width: 100%;
+    }
+
+        .bottom-container .container .navbar-right {
+            margin-right: 0;
+        }
+
+.main-container {
+    position: fixed;
+    top: 50px;
+    bottom: 30px;
+    width: 100%;
+}
+
+    .main-container .main-menu {
+        position: absolute;
+        width: 214px;
+        height: 100%;
+        border-right: 1px solid #d6e3ec;
+        background-color: #fff;
+    }
+
+.main-menu-wide {
+    overflow: auto;
+    height: 100%;
+}
+
+    .main-menu-wide .glyphicon {
+        color: #657599;
+    }
+
+    .main-menu-wide .one-menu > li > a {
+        display: block;
+        padding-left: 20px;
+        height: 50px;
+        border-color: #f6fafd;
+        border-style: solid;
+        border-width: 1px 1px 1px 4px;
+        color: #4c4c4c;
+        font-size: 14px;
+        line-height: 50px;
+    }
+
+    .main-menu-wide .one-menu > .active > a, .main-menu-wide .one-menu > li:hover > a {
+        border-color: #d6e3ec #d6e3ec #d6e3ec #3fa0ef;
+        border-style: solid;
+        border-width: 1px 0 1px 4px;
+        color: #40a1f0;
+    }
+
+        .main-menu-wide .one-menu > .active > a .glyphicon, .main-menu-wide .one-menu > li:hover > a .glyphicon {
+            color: #40a1f0;
+        }
+
+    .main-menu-wide .one-menu > li > a > .glyphicon {
+        padding-right: 10px;
+    }
+
+    .main-menu-wide .one-menu > li > a > .glyphicon-folder-open {
+        padding-right: 15px;
+    }
+
+    .main-menu-wide .more {
+        float: right;
+        line-height: 3pc;
+    }
+
+    .main-menu-wide .two-menu .more {
+        line-height: 2.3pc;
+    }
+
+    .main-menu-wide .two-menu {
+        display: none;
+        border-bottom: 1px #d6e3ec solid;
+    }
+
+        .main-menu-wide .two-menu > .active > a, .main-menu-wide .two-menu > .active > a > span {
+            background-color: #40a0ef;
+            color: #fff;
+        }
+
+        .main-menu-wide .two-menu > .act > a, .main-menu-wide .two-menu > .act > a > span {
+            color: #40a1f0;
+        }
+
+        .main-menu-wide .two-menu > li > a {
+            display: block;
+            padding-left: 40px;
+            height: 40px;
+            border: 1px solid #f6fafd;
+            color: #4c4c4c;
+            font-size: 14px;
+            line-height: 40px;
+        }
+
+            .main-menu-wide .two-menu > li > a > span {
+                padding-right: 2px;
+            }
+
+    .main-menu-wide .three-menu {
+        display: none;
+    }
+
+        .main-menu-wide .three-menu > li > a {
+            display: block;
+            padding-left: 67px;
+            height: 35px;
+            border: 1px solid #f6fafd;
+            color: #4c4c4c;
+            font-size: 14px;
+            line-height: 35px;
+        }
+
+        .main-menu-wide .three-menu > .active, .main-menu-wide .three-menu > .active > a, .main-menu-wide .three-menu > .active > a > span, .main-menu-wide .three-menu > .active > a:hover, .main-menu-wide .three-menu > .active > a:hover > span {
+            background-color: #40a0ef;
+            color: #fff;
+        }
+
+.main-container .main-iframe {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 214px;
+    height: 100%;
+    background-color: #fff;
+}
+
+    .main-container .main-iframe iframe {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+.login-bg {
+    background-color: #f3f3f4;
+}
+
+.login-main {
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 300px;
+    text-align: center;
+}
+
+.login-logo {
+    margin-bottom: 0;
+    color: #e6e6e6;
+    letter-spacing: -10px;
+    font-weight: 800;
+    font-size: 10pc;
+}
+
+.login-welcome {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: inherit;
+    font-weight: 600;
+    font-size: 1pc;
+    font-family: inherit;
+}
+
+.login-main .btn {
+    margin-bottom: 15px;
+    border-color: #40a1f0;
+    border-radius: 3px;
+    background-color: #40a1f0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+    .login-main .btn:hover {
+        border-color: #1488e8;
+        background-color: #1388e8;
+        color: #fff;
+    }
+
+.main-content .glyphicon {
+    padding-right: 5px;
+}
+
+.main-content .top-path .breadcrumb {
+    margin-bottom: 15px;
+    padding: 8px 0;
+    border-bottom: 1px solid #d6e3ec;
+    background-color: #fff;
+}
+
+.main-content .top-toolbar {
+    margin-bottom: 15px;
+    height: 2pc;
+}
+
+    .main-content .top-toolbar .btn-default {
+        height: 2pc;
+        border-color: #d6e3ec;
+        background-color: #fff;
+        color: #4c4c4c;
+        font-size: 9pt;
+    }
+
+        .main-content .top-toolbar .btn-default.active, .main-content .top-toolbar .btn-default:active, .main-content .top-toolbar .btn-default:hover, .main-content .top-toolbar .open > .dropdown-toggle.btn-default {
+            border-color: #1587e8;
+            background-color: #409fef;
+            color: #fff;
+        }
+
+    .main-content .top-toolbar .search {
+        width: 200px;
+    }
+
+.main-content .table-list {
+    margin-bottom: 15px;
+    border: 1px #d6e3ec solid;
+}
+
+    .main-content .table-list .table {
+        margin-bottom: 0;
+    }
+
+        .main-content .table-list .table > thead > tr > th {
+            border-bottom: 1px solid #d6e3ec;
+            text-align: center;
+        }
+
+        .main-content .table-list .table > tbody > tr > td {
+            text-align: center;
+            line-height: 25px;
+            border-top: 1px solid #d6e3ec;
+        }
+
+        .main-content .table-list .table .state-tools {
+            float: left;
+            margin-right: 5px;
+            width: 25px;
+            height: 25px;
+            border: 1px #d6e3ec solid;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #d6e3ec;
+            vertical-align: middle;
+        }
+
+            .main-content .table-list .table .state-tools.active, .main-content .table-list .table .state-tools:hover {
+                border-color: #409fef;
+                background-color: #409fef;
+                color: #fff;
+            }
+
+            .main-content .table-list .table .state-tools .glyphicon {
+                padding: 3px;
+                font-size: 14px;
+            }
+
+        .main-content .table-list .table .form-control {
+            padding: 3px 6px;
+            box-shadow: none;
+            text-align: center;
+        }
+
+        .main-content .table-list .table a {
+            color: #2a72c5;
+            text-decoration: none;
+        }
+
+            .main-content .table-list .table a:hover {
+                color: #2a72c5;
+                text-decoration: underline;
+            }
+
+        .main-content .table-list .table tr:hover {
+            background-color: #f7f7f7;
+        }
+
+        .main-content .table-list .table > tbody > tr > td {
+            vertical-align: middle;
+        }
+
+    .main-content .table-list.sub-table {
+        border: 0;
+    }
+
+        .main-content .table-list.sub-table .table > tbody > tr > td {
+            border: 1px solid #d6e3ec;
+            text-align: left;
+        }
+
+.main-content .bottom-page .pagination {
+    margin: 0;
+}
+
+.main-content .content-edit .nav-tabs > li > a {
+    margin-right: 0;
+}
+
+.main-content .content-edit .nav-tabs {
+    border-bottom: 1px solid #d6e3ec;
+}
+
+    .main-content .content-edit .nav-tabs > li > a {
+        padding: 10px 30px;
+        color: #4c4c4c;
+    }
+
+    .main-content .content-edit .nav-tabs > li.active > a {
+        border-color: #d6e3ec #d6e3ec transparent;
+        border-style: solid;
+        border-width: 1px;
+        color: #3f93ed;
+    }
+
+.main-content .content-edit .nav-tabs-content {
+    margin-bottom: 55px;
+    padding: 20px 15px;
+    width: 100%;
+    border: 1px #d6e3ec solid;
+    border-top: 0;
+    display: none;
+}
+
+    .main-content .content-edit .nav-tabs-content.active {
+        display: block;
+    }
+
+    .main-content .content-edit .nav-tabs-content > dl {
+        clear: both;
+        display: block;
+        margin-bottom: 0;
+        padding: 5px 0;
+        line-height: 30px;
+    }
+
+        .main-content .content-edit .nav-tabs-content > dl > dt {
+            float: left;
+            display: block;
+            width: 130px;
+            color: #6d7e86;
+            text-align: right;
+            font-weight: 400;
+            line-height: 30px;
+        }
+
+        .main-content .content-edit .nav-tabs-content > dl > dd {
+            position: relative;
+            margin-left: 150px;
+            line-height: 30px;
+        }
+
+.edui-default {
+    line-height: 20px;
+}
+
+.main-content .content-edit .nav-tabs-content .form-control {
+    display: inline-block;
+    padding: 3px 6px;
+    width: 300px;
+    box-shadow: none;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.main-content .content-edit .nav-tabs-content .bootstrap-select {
+    padding: 0;
+    width: 300px;
+}
+
+.main-content .bottom-btn {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: hidden;
+    margin-top: 9pt;
+    padding: 10px 15px;
+    height: 55px;
+    background-color: #fff;
+}
+
+.default-index .bs-callout {
+    margin: 20px 0;
+    padding: 20px;
+    border-color: #eee;
+    border-style: solid;
+    border-width: 1px 1px 1px 5px;
+    border-image: none;
+}
+
+.default-index .bs-callout-info {
+    border-left-color: #40a0ef;
+}
+
+.default-index .bs-callout .img {
+    margin-right: 15px;
+    width: 90pt;
+}
+
+    .default-index .bs-callout .img img {
+        width: 115px;
+        height: 115px;
+    }
+
+.default-index .con {
+    padding-top: 20px;
+    color: #777;
+}
+
+    .default-index .con ul li {
+        font-size: 14px;
+        line-height: 45px;
+    }
+
+        .default-index .con ul li .user {
+            color: #40a1f0;
+        }
+
+        .default-index .con ul li h4 {
+            margin: 0;
+            color: #777;
+            font-weight: 700;
+            font-size: 1pc;
+        }
+
+.default-index .useinfo01 {
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #eee;
+}
+
+    .default-index .useinfo01 > ul {
+        overflow: hidden;
+        padding: 20px;
+    }
+
+        .default-index .useinfo01 > ul > li {
+            float: left;
+            margin-right: 1%;
+            padding: 0 2% 0 1%;
+            width: 24%;
+            height: 60px;
+            color: #fff;
+            font-size: 50px;
+            line-height: 60px;
+        }
+
+            .default-index .useinfo01 > ul > li .glyphicon {
+                float: left;
+                margin: 9px 1pc 9px 0;
+                padding-right: 0;
+                font-size: 40px;
+            }
+
+            .default-index .useinfo01 > ul > li .txt {
+                float: left;
+                margin-top: 10px;
+                width: 25%;
+                height: 50px;
+                font-size: 14px;
+            }
+
+                .default-index .useinfo01 > ul > li .txt span {
+                    display: inline-block;
+                    width: 100%;
+                    height: 20px;
+                    line-height: 20px;
+                }
+
+            .default-index .useinfo01 > ul > li .mun {
+                float: right;
+                display: inline-block;
+                padding-right: 2%;
+                width: 50%;
+                height: 60px;
+                text-align: right;
+                font-size: 14px;
+                line-height: 60px;
+            }
+
+.default-index .useinfo02 {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+    .default-index .useinfo02 .tab {
+        width: 49%;
+        border: 1px solid #eee;
+        font-size: 14px;
+    }
+
+        .default-index .useinfo02 .tab .title {
+            display: inline-block;
+            padding: 5px 0;
+            width: 100%;
+            border-bottom: 1px solid #eee;
+            background-color: #fbfbfb;
+            color: #777;
+            text-indent: 20px;
+            font-weight: 700;
+        }
+
+        .default-index .useinfo02 .tab .cont {
+            padding: 5px 15px;
+            height: 135px;
+        }
+
+            .default-index .useinfo02 .tab .cont ul {
+                margin-bottom: 0;
+                line-height: 25px;
+            }
+
+            .default-index .useinfo02 .tab .cont .img {
+                padding-right: 1%;
+                width: 20%;
+            }
+
+            .default-index .useinfo02 .tab .cont .nei {
+                padding-top: 10px;
+                width: 76%;
+            }
+
+                .default-index .useinfo02 .tab .cont .nei ul li {
+                    line-height: 25px;
+                }
+
+.pagination > li > a, .pagination > li > span {
+    position: inherit;
+}
+
+.table-list .glyphicon.tis {
+    padding: 5px;
+    color: #c6c7c8;
+    font-size: 1pc;
+}
+
+.table-list span.skin_hs, .table-list span.skin_k {
+    display: inline-block;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.table-list span.skin_hs {
+    background: url(../images/skin_hs.png) no-repeat left center;
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.modal-header {
+    padding: 7px 10px;
+}
+
+.modal-body {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.modal-dialog {
+    margin: 20% auto;
+}
+
+.modal-footer {
+    padding: 0 10px 10px;
+    border-top: 0;
+}
+
+    .modal-footer .btn {
+        padding: 5px 15px;
+        font-size: 9pt;
+    }
+
+        .modal-footer .btn.btn-primary {
+            border-color: #40a1f0;
+            background-color: #40a1f0;
+            color: #fff;
+        }
+
+            .modal-footer .btn.btn-primary:hover {
+                border-color: #1488e8;
+                background-color: #1388e8;
+                color: #fff;
+            }
+
+/*上传样式*/
+.upload-box {
+    position: relative;
+    display: inline-block;
+    height: 32px;
+    vertical-align: middle;
+    zoom: 1;
+    *display: inline;
+}
+
+    .upload-box .upload-btn {
+        display: inline-block;
+        height: 32px;
+        zoom: 1;
+        *display: inline;
+    }
+
+    .upload-box .upload-progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 2px 5px;
+        width: 125px;
+        height: 30px;
+        border: 1px solid #d7d7d7;
+        background: #fff;
+        overflow: hidden;
+    }
+
+        .upload-box .upload-progress .txt {
+            display: block;
+            padding-right: 10px;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 11px;
+            line-height: 18px;
+            height: 18px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .upload-box .upload-progress .bar {
+            position: relative;
+            display: block;
+            width: 112px;
+            height: 4px;
+            border: 1px solid #1da76b;
+        }
+
+            .upload-box .upload-progress .bar b {
+                display: block;
+                width: 0%;
+                height: 3px;
+                font-weight: normal;
+                text-indent: -99em;
+                background: #28B779;
+                overflow: hidden;
+            }
+
+        .upload-box .upload-progress .close {
+            position: absolute;
+            color: #3f93ed;
+            display: block;
+            top: 1px;
+            right: 1px;
+            width: 14px;
+            height: 14px;
+            text-indent: -99em;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+/*图片相册样式*/
+.photo-list {
+    margin: 0;
+    padding: 10px 0 0 0;
+    display: table;
+}
+
+    .photo-list ul {
+        margin: 0 0 0 -15px;
+    }
+
+        .photo-list ul li {
+            float: left;
+            margin-left: 15px;
+            text-align: center;
+            *width: 118px;
+        }
+
+            .photo-list ul li .img-box {
+                position: relative;
+                margin: 5px auto;
+                width: 188px;
+                height: 188px;
+                border: 3px #efefed solid;
+                cursor: pointer;
+                overflow: hidden;
+            }
+
+                .photo-list ul li .img-box.selected {
+                    border: 3px #40a0ef solid;
+                }
+
+                .photo-list ul li .img-box img {
+                    width: 100%;
+                    height: 100%;
+                    opacity: 1;
+                }
+
+                .photo-list ul li .img-box .remark {
+                    position: absolute;
+                    display: block;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: 0;
+                    padding: 3px 2px;
+                    height: 18px;
+                    line-height: 18px;
+                    background: #000;
+                    filter: alpha(opacity=50);
+                    opacity: 0.5;
+                    -moz-opacity: 0.5;
+                    text-align: left;
+                    overflow: hidden;
+                }
+
+                    .photo-list ul li .img-box .remark:hover {
+                        top: 0;
+                        bottom: 0;
+                        height: 100%;
+                    }
+
+                    .photo-list ul li .img-box .remark i {
+                        position: relative;
+                        font-size: 12px;
+                        color: #fff;
+                        font-style: normal;
+                        line-height: 18px;
+                    }
+
+            .photo-list ul li a {
+                padding-right: 1em;
+            }
+/*=====================以下部分是WebUploader必须的====================*/
+.webuploader-container {
+    position: relative;
+}
+
+.webuploader-element-invisible {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+}
+
+.webuploader-pick {
+    position: relative;
+    display: inline-block;
+    width: 65px;
+    line-height: 30px;
+    height: 30px;
+    border: 1px solid #e1e1e1;
+    cursor: pointer;
+    background: #fff;
+    color: #333;
+    text-align: center;
+    overflow: hidden;
+    zoom: 1;
+    *display: inline;
+}
+
+.webuploader-pick-hover {
+    background: #fafafa;
+}
+
+.webuploader-pick-disable {
+    opacity: 0.6;
+    pointer-events: none;
+}
+/*=====================以上部分是WebUploader必须的====================*/
+
+.order-flow {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0 auto;
+    padding: 0 0 4px;
+}
+
+.order-flow-left, .order-flow-arrive, .order-flow-wait, .order-flow-right-arrive, .order-flow-right-wait {
+    background: rgba(0, 0, 0, 0) url(../images/order_speed.gif) no-repeat scroll 0 0;
+    float: left;
+    font-family: Arial;
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 140px;
+}
+
+.order-flow div span {
+    background: #fff none repeat scroll 0 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+    .order-flow div span p {
+        margin: 0;
+        padding: 0;
+    }
+
+.order-flow .name {
+    margin: 0;
+    padding: 0 0 4px;
+}
+
+.order-flow-arrive {
+    background-position: 0 -40px;
+}
+
+.order-flow-wait {
+    background-position: 0 -20px;
+    color: #878787;
+}
+
+.order-flow-right-arrive {
+    background-position: 0 -80px;
+}
+
+.order-flow-right-wait {
+    background-position: 0 -60px;
+    color: #878787;
+}
+
+.order-flow-input {
+    cursor: inherit;
+    display: block;
+    height: 18px;
+    margin: 2px auto;
+    overflow: hidden;
+    padding: 0;
+    text-indent: -999px;
+    width: 18px;
+}
+
+.skupic {
+    display: table;
+}
+
+    .skupic li {
+        float: left;
+        line-height: 20px;
+        margin: 0 8px 8px 0;
+        padding: 1px;
+        position: relative;
+        vertical-align: middle;
+    }
+
+        .skupic li a {
+            border: 1px solid #eee;
+            color: #666;
+            cursor: pointer;
+            display: block;
+            min-width: 10px;
+            padding: 1px;
+            text-align: center;
+            text-decoration: none;
+            text-overflow: ellipsis;
+            vertical-align: middle;
+            white-space: nowrap;
+            width: auto !important;
+        }
+
+            .skupic li a i {
+                display: inline-block;
+                font-style: normal;
+                line-height: 20px;
+                padding: 3px 9px;
+            }
+
+            .skupic li a img {
+                height: 38px;
+                vertical-align: middle;
+                width: 38px;
+            }
+
+        .skupic li::after {
+            background: rgba(0, 0, 0, 0) url("../images/sel_icons.png") no-repeat;
+            bottom: 0;
+            content: ".";
+            display: none;
+            height: 12px;
+            overflow: hidden;
+            position: absolute;
+            right: 0;
+            text-indent: -99em;
+            width: 12px;
+        }
+
+        .skupic li.selected a {
+            border: 2px solid #1e99c7;
+            color: #333;
+            margin: -1px;
+        }
+
+        .skupic li.selected::after {
+            background-position: right bottom;
+            display: block;
+        }
+
+.skupiclist img {
+    border: 1px solid #d6e3ec;
+    width: 28px;
+    height: 28px;
+    margin: 2px;
+}

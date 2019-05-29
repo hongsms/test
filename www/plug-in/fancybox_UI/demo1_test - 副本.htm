@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title></title>
+<link rel="stylesheet" href="../../css/css.css">
+<link rel="stylesheet" href="../../css/op.css">
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript">
+    jQuery.noConflict();
+	jQuery(document).ready(function($){
+		$(".guidelist li").hover(
+			function () {
+				$(this).attr("class", "mouseon");
+			  },
+			  function () {
+				$(this).attr("class", "mouseout");
+			  }
+		);
+		$(".ftoollist li").mouseover(function(){
+			$(this).siblings().removeClass("on");
+			$(this).addClass("on");
+			var preNumber=$(this).prevAll().size();
+			$(".fimglist li").removeClass("onpre");
+			$(".fimglist li:nth-child("+preNumber+")").addClass("onpre");
+			var margin = 656;
+			margin = margin *preNumber; 
+			margin = margin * -1;
+			$(".fimglist").stop().animate({marginLeft: margin + "px"}, {duration: 500});
+		});
+	});
+</script>
+<script>
+window.onload = function() {
+    function $(x) {            
+        return document.getElementById(x);
+    };
+    $("wrap").onmousewheel = function scrollWheel(e) {
+        var sl;
+        e = e || window.event;
+        if (navigator.userAgent.toLowerCase().indexOf('msie') >= 0) {
+            event.returnValue = false;
+        } else {
+            e.preventDefault();
+        };
+        if (e.wheelDelta) {
+            sl = e.wheelDelta;
+        } else if (e.detail) {
+            sl = -e.detail;
+        };
+        if (sl < 0) {
+            var x = parseInt($("he").innerHTML);
+            x++;
+            $("he").innerHTML = x;
+        } else {
+            var x = parseInt($("he").innerHTML);
+            x--;
+            $("he").innerHTML = x;
+        };
+    };
+    if (navigator.userAgent.toLowerCase().indexOf('firefox') >= 0) {
+        //firefox支持onmousewheel
+        addEventListener('DOMMouseScroll',
+        function(e) {
+            var obj = e.target;
+            var onmousewheel;
+            while (obj) {
+                onmousewheel = obj.getAttribute('onmousewheel') || obj.onmousewheel;
+                if (onmousewheel) break;
+                if (obj.tagName == 'BODY') break;
+                obj = obj.parentNode;
+            };
+            if (onmousewheel) {
+                if (e.preventDefault) e.preventDefault();
+                e.returnValue = false; //禁止页面滚动
+                if (typeof obj.onmousewheel != 'function') {
+                    //将onmousewheel转换成function
+                    eval('window._tmpFun = function(event){' + onmousewheel + '}');
+                    obj.onmousewheel = window._tmpFun;
+                    window._tmpFun = null;
+                };
+                // 不直接执行是因为若onmousewheel(e)运行时间较长的话，会导致锁定滚动失效，使用setTimeout可避免
+                setTimeout(function() {
+                    obj.onmousewheel(e);
+                },
+                1);
+            };
+        },
+        false);
+ 
+    };
+}
+
+</script>
+
+</head>
+<body>
+<div class="border" id="wrap" style="padding-top:100px; padding-bottom:300px;">
+<div id="skun" style="width:720px; margin:0 auto; height:500px; overflow:hidden; overflow:auto; background:#fff;">
+                <div class="fx-op">
+                   <a href="#"><img src="../../images/w01.jpg"></a><a href="#"><img src="../../images/w02.jpg"></a><a href="#"><img src="../../images/w03.jpg"></a><a href="#"><img src="../../images/w04.jpg"></a><a href="#"><img src="../../images/w05.jpg"></a><a href="#"><img src="../../images/w06.jpg"></a><a href="#"><img src="../../images/w07.jpg"></a>
+                </div> 
+  <div class="focus">
+    <div class="focusbox">         
+        <div class="focusimg">
+        <ul class="fimglist clearfix">
+            <li><a href="#"><img src="../../images/101.jpg" title=""></a></li>
+            <li><a href="#"><img src="../../images/101.jpg" title=""></a></li>
+            <li><a href="#"><img src="../../images/101.jpg" title=""></a></li>
+            <li><a href="#"><img src="../../images/101.jpg" title=""></a></li>
+
+        </ul>
+        </div> 
+        <div class="focustool">
+        <ul class="ftoollist clearfix">
+            <li class="on"><a href="#"><img src="../../images/101.jpg" width="129" height="69"></a></li>
+            <li><a href="#"><img src="../../images/101.jpg" width="125" height="69"></a></li>
+            <li><a href="#"><img src="../../images/101.jpg" width="125" height="69"></a></li>
+            <li><a href="#"><img src="../../images/101.jpg" width="125" height="69"></a></li>
+        </ul>
+        </div>
+    </div>
+  </div>
+   <div class="focu-main">
+   <p>
+助理编辑 x 1
+<br>本科及以上学历
+<br>良好的语言表达与沟通能力
+<br>优秀的文字撰写能力
+<br>熟练操作办公软件（包括Word / Excel / Powerpoint …）
+<br>能独立完成工作
+<br>对设计 / 艺术 / 出版行业有浓厚兴趣
+<br>英文读写熟练者，熟悉苹果程序者优先
+</p>
+   <p>
+助理编辑 x 1
+<br>本科及以上学历
+<br>良好的语言表达与沟通能力
+<br>优秀的文字撰写能力
+<br>熟练操作办公软件（包括Word / Excel / Powerpoint …）
+<br>能独立完成工作
+<br>对设计 / 艺术 / 出版行业有浓厚兴趣
+<br>英文读写熟练者，熟悉苹果程序者优先
+</p>
+   
+   </div>
+</div>
+</div>
+      
+      
+
+</body>
+</html>

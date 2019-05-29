@@ -1,0 +1,1 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="ucAddress.ascx.cs" Inherits="Web_Control_ucAddress" %><script src="/Web/style/js/address.js" type="text/javascript"></script><%=AddressHtml %>
